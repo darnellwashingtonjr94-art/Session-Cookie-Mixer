@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  extension-builder:
+    build: .
+    volumes:
+      # Maps your current local directory to /app in the container
+      - .:/app
