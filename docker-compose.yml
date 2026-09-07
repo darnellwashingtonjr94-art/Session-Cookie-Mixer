@@ -1,30 +1,17 @@
-version: '3.8'
-
+# Remove the "version: '3.8'" (or similar) line entirely. Start right at services:
 services:
-  # Service 1: Validates JavaScript code quality
-  linter:
-    build:
-      context: .
-      dockerfile: Dockerfile.lint
-    volumes:
-      - .:/app
-
-  # Service 2: Builds and packages the extension .zip file
-  builder:
-    build:
+  # Your main app service
+  app:
+    build: 
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - .:/app
-    depends_on:
-      - linter
+    ports:
+      - "3000:3000"
+    # ... any other configuration ...
 
-  # Service 3: Runs End-to-End browser tests with Puppeteer
+  # Your e2e test service (referenced in your logs)
   test-e2e:
     build:
       context: .
       dockerfile: Dockerfile.e2e
-    volumes:
-      - .:/app
-    depends_on:
-      - builder
+    # ... any other configuration ...
