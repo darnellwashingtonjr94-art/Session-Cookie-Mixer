@@ -1,8 +1,10 @@
 name: Build and Release Extension
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
 
 jobs:
   build:
