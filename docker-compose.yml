@@ -18,3 +18,13 @@ services:
       - .:/app
     depends_on:
       - linter
+
+  # Service 3: Runs End-to-End browser tests with Puppeteer
+  test-e2e:
+    build:
+      context: .
+      dockerfile: Dockerfile.e2e
+    volumes:
+      - .:/app
+    depends_on:
+      - builder
