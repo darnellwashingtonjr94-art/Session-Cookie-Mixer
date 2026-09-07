@@ -1,7 +1,20 @@
 version: '3.8'
+
 services:
-  extension-builder:
-    build: .
+  # Service 1: Validates JavaScript code quality
+  linter:
+    build:
+      context: .
+      dockerfile: Dockerfile.lint
     volumes:
-      # Maps your current local directory to /app in the container
       - .:/app
+
+  # Service 2: Builds and packages the extension .zip file
+  builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    depends_on:
+      - linter
