@@ -1,7 +1,9 @@
+# Use the Node 18 Bullseye base image 
 FROM node:18-bullseye
 
-# Install Chromium and dependencies for Puppeteer
-RUN apt-get update && apt-get install -y \
+# Install Chromium and dependencies for e2e testing
+# The '-o Acquire::Check-Valid-Until=false' flag is added to bypass the expired release file error
+RUN apt-get -o Acquire::Check-Valid-Until=false update && apt-get install -y \
     chromium \
     libnss3 \
     libatk-bridge2.0-0 \
@@ -14,13 +16,17 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
+# Set the working directory inside the container
+WORKDIR /usr/src/app
 
-WORKDIR /app
+# Copy package.json and package-lock.json 
+COPY package*.json ./
 
-# Install Puppeteer locally
-RUN npm init -y && npm install puppeteer
+# Install project dependencies
+RUN npm install
 
-# Run the test script
-CMD ["node", "e2e-test.js"]
+# Copy the rest of your application code into the container
+COPY . .
+
+# Run your end-to-end tests
+CMD ["npm", "run", "test:e2e"]
