@@ -1,0 +1,10 @@
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install ESLint and Chrome Extension globals parser
+RUN npm install -g eslint eslint-plugin-globals
+
+# Default command to run linting on all JavaScript files
+CMD ["eslint", "background.js", "popup/", "--env", "browser,webextensions,es2021"]
