@@ -13,11 +13,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+        
       - name: Package Extension
         run: |
-          zip -r session-cookie-mixer.zip manifest.json background.js icons/ popup/ LICENSE README.md
-
+          zip -r session-cookie-mixer.zip . -x "*.git*" -x ".github/*" -x "setup.sh" -x "build.sh" -x "Dockerfile" -x "docker-compose.yml"
+          
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
