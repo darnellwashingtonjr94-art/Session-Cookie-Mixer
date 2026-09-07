@@ -1,4 +1,4 @@
-name: Docker CI Pipeline
+name: docker-workflow
 
 on:
   push:
@@ -7,16 +7,16 @@ on:
     branches: [ "main" ]
 
 jobs:
-  docker-workflow:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
 
       - name: Build and run docker-compose services
-        run: |
-          docker-compose up --build --abort-on-container-exit
+        # Notice the space instead of the hyphen here
+        run: docker compose up --build --abort-on-container-exit
