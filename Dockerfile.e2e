@@ -1,9 +1,8 @@
-# Use the Node 18 Bullseye base image 
-FROM node:18-bullseye
+# Upgrade to the current stable Debian release (Bookworm) for Node 18
+FROM node:18-bookworm
 
 # Install Chromium and dependencies for e2e testing
-# The '-o Acquire::Check-Valid-Until=false' flag is added to bypass the expired release file error
-RUN apt-get -o Acquire::Check-Valid-Until=false update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
     chromium \
     libnss3 \
     libatk-bridge2.0-0 \
