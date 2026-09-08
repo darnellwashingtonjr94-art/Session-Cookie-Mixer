@@ -4,7 +4,56 @@
 
 ## Languages, Systems & Architecture
 
-*   **Core Languages:** ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bash](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+* **Core Languages:** 
+  ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  ![Bash](https://img.shields.io/badge/bash-%234EAA25.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+* **Core Systems:** 
+  ![NodeJS](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)
+
+* **Supported Browsers:** 
+  ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-%234285F4.svg?style=for-the-badge&logo=Google-Chrome&logoColor=white)
+  ![Microsoft Edge](https://img.shields.io/badge/Microsoft%20Edge-%230078D7.svg?style=for-the-badge&logo=Microsoft-Edge&logoColor=white)
+  ![Brave](https://img.shields.io/badge/Brave-%23FB542B.svg?style=for-the-badge&logo=Brave&logoColor=white)
+
+* **Target OS / Environments:** 
+  ![Alpine Linux](https://img.shields.io/badge/Alpine%20Linux-%230D597F.svg?style=for-the-badge&logo=alpine-linux&logoColor=white)
+  ![Debian](https://img.shields.io/badge/Debian-%23A81D33.svg?style=for-the-badge&logo=debian&logoColor=white)
+  ![Ubuntu](https://img.shields.io/badge/Ubuntu-%23E95420.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
+
+---
+
+## Infrastructure, Security & DevOps
+
+* **Low-Level Infrastructure:** 
+  ![Manifest V3](https://img.shields.io/badge/Manifest%20V3-Extension-informational?style=for-the-badge&logo=google-chrome&logoColor=white)
+
+* **Cybersecurity Tactics:** 
+  ![Data Privacy](https://img.shields.io/badge/Data%20Privacy-Protection-critical?style=for-the-badge&logo=awesomewm&logoColor=white)
+
+* **DevOps & CI/CD:** 
+  ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+  ![GitHub Actions](https://img.shields.io/badge/github%20actions-%2320232a.svg?style=for-the-badge&logo=github-actions&logoColor=white)
+
+* **Testing & Linting:** 
+  ![Puppeteer](https://img.shields.io/badge/puppeteer-%2340B5A4.svg?style=for-the-badge&logo=puppeteer&logoColor=white)
+  ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+
+---
+
+## AI & Cloud Providers
+
+* **Artificial Intelligence:** 
+  ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-%238E75B2.svg?style=for-the-badge&logo=google&logoColor=white)
+
+* **Cloud Infrastructure:** 
+  ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+
+* **Version Control & Registries:** 
+  ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+  ![Docker Hub](https://img.shields.io/badge/docker%20hub-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
    **Core Systems:** ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
    
