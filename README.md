@@ -70,7 +70,7 @@ Session-Cookie-Mixer is a privacy-focused browser extension that protects your o
 
 **Step 1: Download & Build**
 ```bash
-git clone [https://github.com/your-username/Session-Cookie-Mixer.git](https://github.com/your-username/Session-Cookie-Mixer.git)
+git clone [https://github.com/darnellwashingtonjr94@gmail.com/Session-Cookie-Mixer.git](https://github.com/darnellwashingtonjr94-art/Session-Cookie-Mixer.git)
 cd Session-Cookie-Mixer
 
 ---
