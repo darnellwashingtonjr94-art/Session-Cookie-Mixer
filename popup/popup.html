@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Session Cookie Mixer</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <div class="container">
-    <h2>Cookie Mixer</h2>
-    <p class="status" id="statusText">Status: Idle</p>
+    <h2>Session Cookie Mixer</h2>
+    
+    <!-- Dilution Ratio Dashboard -->
+    <div class="dashboard">
+      <p>Real Cookies: <span id="realCount">0</span></p>
+      <p>Fake Cookies: <span id="fakeCount">0</span></p>
+      <p>Dilution Ratio: <strong id="ratioStr">0%</strong></p>
+    </div>
+
+    <!-- Thematic Persona Mixing -->
+    <select id="personaSelect">
+      <option value="Random internet user">Default / Random</option>
+      <option value="Luxury Car Buyer">Luxury Car Buyer</option>
+      <option value="Fitness Enthusiast">Fitness Enthusiast</option>
+      <option value="Tech Developer">Tech Developer</option>
+    </select>
+
+    <!-- Local LLM Integration -->
+    <select id="aiModeSelect">
+      <option value="gemini">Google Gemini API</option>
+      <option value="local">Local Ollama (Llama 3)</option>
+    </select>
+
     <button id="generateBtn">Mix Cookies Now</button>
+    
+    <!-- One-Click Identity Reset -->
+    <button id="resetBtn" style="background: #d9534f;">Nuke & Reset Identity</button>
+    
+    <p id="statusText"></p>
   </div>
   <script src="popup.js"></script>
 </body>
