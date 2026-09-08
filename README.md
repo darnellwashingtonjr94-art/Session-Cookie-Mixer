@@ -38,7 +38,7 @@
    **Version Control & Registries:**
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Docker Hub](https://img.shields.io/badge/Docker%20Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-# Session-Cookie-Mixer
+# # Session-Cookie-Mixer
 
 Session-Cookie-Mixer is a privacy-focused browser extension that protects your online activity through **data dilution**. By flooding your browser storage with 1,000 fake, AI-generated cookies, it buries your actual browsing habits in synthetic noise—making it impossible for trackers to build an accurate profile on you.
 
@@ -50,55 +50,29 @@ Session-Cookie-Mixer is a privacy-focused browser extension that protects your o
 ## ✨ Features
 
 *   **Data Dilution Privacy:** Obfuscates genuine user tracking profiles by injecting 1,000 randomized synthetic cookies into storage.
-*   **AI-Powered Realism:** Connects with the Google Gemini API to generate highly believable domain names, parameters, and cookie values.
-*   **Automated Injection:** Runs automatically every time you open your browser to maintain consistent tracking noise.
-*   **Custom Standalone Browser:** Includes a Python-based launcher (`browser_launcher.py`) to run a dedicated Chromium instance with the extension permanently pre-installed.
-*   **Automated Scouting Bot:** A built-in AI script (`scout_bot.py`) that monitors GitHub for new browser releases and automatically generates compatibility Pull Requests.
+*   **AI-Powered Realism:** Connects with the Google Gemini API (or local LLMs via Ollama) to generate highly believable domain names, parameters, and cookie values.
+*   **Automated & Interval Injection:** Runs automatically on startup and trickles in fresh tracking noise every 30 minutes via background alarms.
+*   **Thematic Persona Mixing:** Tailor generated cookie data to match specific user personas (e.g., Luxury Car Buyer, Fitness Enthusiast).
+*   **Dilution Ratio Dashboard:** Visualizes real-time ratios comparing your genuine tracking cookies against synthetic noise.
+*   **One-Click Identity Reset:** Instantly wipes storage and rebuilds a fresh batch of 1,000 synthetic cookies on demand.
+*   **Custom Standalone Browser Launcher:** Includes `browser_launcher.py` to run a dedicated Chromium instance with the extension permanently pre-installed.
+*   **Automated Scouting Bot:** An AI script (`scout_bot.py`) that monitors GitHub for new browser releases and automatically generates compatibility Pull Requests.
 
 ## ⚙️ How It Works
 
 1.  **Launch:** Opening your web browser automatically triggers the background extension script.
-2.  **AI Generation:** The script connects to Google Gemini to dynamically generate 1,000 realistic synthetic cookies.
+2.  **AI Generation:** The script connects to Google Gemini or a local model to dynamically generate 1,000 realistic synthetic cookies based on your chosen persona.
 3.  **Storage Mixing:** The extension dumps the fake cookies directly into your browser's storage folder, mixing them seamlessly with your real ones.
 
 ## 🚀 Installation & Setup
 
 **Prerequisites**
 *   Any Chromium-based browser (Google Chrome, Brave, Microsoft Edge)
-*   A Google Gemini API Key
-*   Python 3.8+ (Required only for the automation bots)
+*   A Google Gemini API Key (or local Ollama setup)
+*   Python 3.8+ (Required for automation bots)
 
 **Step 1: Download & Build**
 ```bash
-git clone [https://github.com/darnellwashingtonjr94@gmail.com/Session-Cookie-Mixer.git](https://github.com/darnellwashingtonjr94-art/Session-Cookie-Mixer.git)
+git clone [https://github.com/darnellwashingtonjr94-art/Session-Cookie-Mixer.git](https://github.com/darnellwashingtonjr94-art/Session-Cookie-Mixer.git)
 cd Session-Cookie-Mixer
 
----
-
-## ✨ Features
-
-* **Data Dilution Privacy:** Obfuscates genuine user tracking profiles by injecting 1,000 randomized synthetic cookies into storage.
-* **AI-Powered Realism:** Connects with the **Google Gemini API** to generate highly believable domain names, parameters, and cookie values.
-* **Automated Injection:** Runs automatically every time you open your browser to maintain consistent tracking noise.
-
----
-
-## ⚙️ How It Works
-
-1. **Launch:** Opening your web browser automatically triggers the background extension script.
-2. **AI Generation:** The script connects to Google Gemini to dynamically generate 1,000 realistic synthetic cookies.
-3. **Storage Mixing:** The extension dumps the fake cookies directly into your browser's storage folder, mixing them seamlessly with your real ones.
-
----
-
-## 🚀 Installation & Setup
-
-### Prerequisites
-* Any Chromium-based browser (Google Chrome, Brave, Microsoft Edge)
-* A [Google Gemini API Key](https://aistudio.google.com/)
-
-### Step 1: Download & Build
-1. Clone or download the source code files from GitHub:
-   ```bash
-   git clone [https://github.com/darnellwashingtonjr94-art/Session-Cookie-Mixer.git](https://github.com/darnellwashingtonjr94-art/Session-Cookie-Mixer.git)
-   cd Session-Cookie-Mixer
